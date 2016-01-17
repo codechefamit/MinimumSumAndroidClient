@@ -1,0 +1,76 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
+    android:layout_height="match_parent" android:paddingLeft="@dimen/activity_horizontal_margin"
+    tools:context="com.codechefamit.min_sumandroidclient.MinimumSum">
+    <!-- TODO: Update blank fragment layout -->
+
+    <ImageView
+        android:layout_width="60dp"
+        android:layout_height="80dp"
+        android:id="@+id/cardKeep"
+        android:layout_centerVertical="true"
+        android:layout_centerHorizontal="true"
+        android:background="@drawable/q"
+        android:contentDescription="@string/cardKeep"
+        android:visibility="invisible" />
+
+    <ImageView
+        android:layout_width="60dp"
+        android:layout_height="80dp"
+        android:id="@+id/cardRemove"
+        android:background="@drawable/c10"
+        android:layout_alignTop="@+id/cardKeep"
+        android:layout_toLeftOf="@+id/cardKeep"
+        android:layout_toStartOf="@+id/cardKeep"
+        android:layout_marginRight="10dp"
+        android:layout_marginEnd="31dp"
+        android:contentDescription="@string/cardRemove"
+        android:visibility="invisible" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceSmall"
+        android:text="@string/rem"
+        android:id="@+id/textView"
+        android:layout_above="@+id/cardRemove"
+        android:layout_alignLeft="@+id/cardRemove"
+        android:layout_alignStart="@+id/cardRemove" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceSmall"
+        android:text="@string/keep"
+        android:id="@+id/textView2"
+        android:layout_alignBottom="@+id/textView"
+        android:layout_toRightOf="@+id/cardRemove"
+        android:layout_toEndOf="@+id/cardRemove" />
+
+    <Button
+        style="?android:attr/buttonStyleSmall"
+        android:layout_width="75dp"
+        android:layout_height="wrap_content"
+        android:text="@string/play"
+        android:id="@+id/btnPlay"
+        android:layout_marginLeft="23dp"
+        android:textSize="10sp"
+        android:layout_alignTop="@+id/textView2"
+        android:layout_toRightOf="@+id/cardKeep"
+        android:layout_toEndOf="@+id/cardKeep"
+        android:layout_marginStart="23dp"
+        android:enabled="false" />
+
+    <Button
+        style="?android:attr/buttonStyleSmall"
+        android:layout_width="75dp"
+        android:layout_height="wrap_content"
+        android:text="@string/show"
+        android:id="@+id/btnShow"
+        android:textSize="10sp"
+        android:layout_alignBottom="@+id/cardKeep"
+        android:layout_alignLeft="@+id/btnPlay"
+        android:layout_alignStart="@+id/btnPlay"
+        android:enabled="false" />
+
+</RelativeLayout>

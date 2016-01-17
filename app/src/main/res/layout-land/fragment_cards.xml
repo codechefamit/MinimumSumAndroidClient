@@ -1,0 +1,63 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
+    android:layout_height="match_parent" android:paddingLeft="@dimen/activity_horizontal_margin"
+    tools:context="com.codechefamit.min_sumandroidclient.MinimumSum">
+
+    <ImageButton
+        android:layout_width="60dp"
+        android:layout_height="80dp"
+        android:id="@+id/cardImg3"
+        android:layout_centerVertical="true"
+        android:layout_centerHorizontal="true"
+        android:background="@drawable/c120"
+        android:layout_marginRight="5dp"
+        android:contentDescription="@string/cardImg3"
+        android:visibility="invisible" />
+
+    <ImageButton
+        android:layout_width="60dp"
+        android:layout_height="80dp"
+        android:id="@+id/cardImg2"
+        android:layout_centerVertical="true"
+        android:layout_toLeftOf="@+id/cardImg3"
+        android:layout_toStartOf="@+id/cardImg3"
+        android:background="@drawable/c130"
+        android:layout_marginRight="5dp"
+        android:contentDescription="@string/cardImg2"
+        android:visibility="invisible" />
+
+    <ImageButton
+        android:layout_width="60dp"
+        android:layout_height="80dp"
+        android:id="@+id/cardImg4"
+        android:layout_centerVertical="true"
+        android:layout_toRightOf="@+id/cardImg3"
+        android:layout_toEndOf="@+id/cardImg3"
+        android:background="@drawable/c110"
+        android:layout_marginRight="5dp"
+        android:contentDescription="@string/cardImg4"
+        android:visibility="invisible" />
+
+    <ImageButton
+        android:layout_width="60dp"
+        android:layout_height="80dp"
+        android:id="@+id/cardImg5"
+        android:background="@drawable/c100"
+        android:layout_alignTop="@+id/cardImg4"
+        android:layout_toRightOf="@+id/cardImg4"
+        android:layout_toEndOf="@+id/cardImg4"
+        android:contentDescription="@string/cardImg5"
+        android:visibility="invisible" />
+
+    <ImageButton
+        android:layout_width="60dp"
+        android:layout_height="80dp"
+        android:id="@+id/cardImg1"
+        android:background="@drawable/c10"
+        android:layout_centerVertical="true"
+        android:layout_toLeftOf="@+id/cardImg2"
+        android:layout_toStartOf="@+id/cardImg2"
+        android:layout_marginRight="5dp"
+        android:contentDescription="@string/cardImg1"
+        android:visibility="invisible" />
+</RelativeLayout>
